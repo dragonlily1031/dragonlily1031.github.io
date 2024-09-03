@@ -1,34 +1,27 @@
 {
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
 
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
+  "vetur.format.defaultFormatter.js": "none",
 
-    "vetur.format.defaultFormatter.js": "none",
+  "editor.formatOnSave": true,
 
-    "editor.codeActionsOnSave": {"source.fixAll": "always"},
+  "editor.bracketPairColorization.enabled": true,
 
-    "editor.bracketPairColorization.enabled": true,
-
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": "variable.parameter",
-                "settings": {
-                    "foreground": "#ffffff",
-                }
-            },
-            {
-                "scope": "variable.other.readwrite",
-                "settings": {
-                    "foreground": "#ffffff",
-                }
-            }
-        ]
-    }
-
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "variable.parameter",
+        "settings": {
+          "foreground": "#ffffff"
+        }
+      },
+      {
+        "scope": "variable.other.readwrite",
+        "settings": {
+          "foreground": "#ffffff"
+        }
+      }
+    ]
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
