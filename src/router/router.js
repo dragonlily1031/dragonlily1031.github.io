@@ -1,12 +1,13 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import HomePage from "../views/HomePage.vue";
-import MtSchedulePage from "../views/MtSchedulePage.vue";
+
+import MtHomePage from "@/pages/MtHomePage.vue";
+import MtSchedulePage from "@/pages/MtSchedulePage.vue";
 
 const routes = [
   {
     path: "/",
     name: "home",
-    component: HomePage,
+    component: MtHomePage,
   },
   {
     path: "/schedule",
