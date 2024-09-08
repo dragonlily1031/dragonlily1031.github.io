@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 
 import MtHomePage from "@/pages/MtHomePage.vue";
 import MtSchedulePage from "@/pages/MtSchedulePage.vue";
+import MtEmergencyPage from "@/pages/MtEmergencyPage.vue";
 
 const routes = [
   {
@@ -13,6 +14,11 @@ const routes = [
     path: "/schedule",
     name: "schedule",
     component: MtSchedulePage,
+  },
+  {
+    path: "/emergency",
+    name: "emergency",
+    component: MtEmergencyPage,
   },
 ];
 

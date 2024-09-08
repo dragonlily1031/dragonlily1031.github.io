@@ -1,14 +1,21 @@
 <!-- MtHomePage.vue -->
 <template>
   <div v-resize="onResize" style="height: 100%; width: 100%; overflow: hidden">
+    <!-- 下地 グレー -->
     <MtCard
       flat
-      color="#eeeeee"
+      color="#999999"
       style="overflow: hidden"
       :height="height"
       :width="width"
     >
-      <MtCard style="overflow: hidden" :height="pageHeight" :width="pageWidth">
+      <!-- 下地 ホワイト -->
+      <MtCard
+        style="margin: 6px; overflow: hidden"
+        :height="pageHeight"
+        :width="pageWidth"
+      >
+        <!-- メイン下地 ホワイト -->
         <MtToolbar title="Home" :elevation="6" isHome></MtToolbar>
         <MtCard
           flat
@@ -16,6 +23,7 @@
           :height="viewHeight"
           :width="pageWidth"
         >
+          <!-- メニュー -->
           <div class="d-flex flex-wrap">
             <div v-for="(item, index) in menus" :key="index">
               <MtCard
@@ -82,11 +90,13 @@ export default {
     onResize: function () {
       this.height = window.innerHeight;
       this.width = window.innerWidth;
-      this.pageHeight = window.innerHeight - 12;
-      this.pageWidth = window.innerWidth - 18;
+      this.pageHeight = window.innerHeight - 12; // 上下6pxずつ取ってる
+      this.pageWidth = window.innerWidth - 12; // 左右6pxずつ取ってる
     },
     execute: function (title) {
       if (title == "Schedule") this.$router.push({ name: "schedule" });
+
+      if (title == "Emergency") this.$router.push({ name: "emergency" });
     },
   },
 };

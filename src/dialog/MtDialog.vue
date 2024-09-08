@@ -1,32 +1,22 @@
 <!-- MtDialog.vue -->
 <template>
-  <div v-resize="onResize" class="text-center pa-4">
-    <v-dialog v-model="dialog" :height="height" :width="width" persistent>
+  <div>
+    <v-dialog
+      v-model="dialog"
+      :width="dialogWidth"
+      transition="slide-x-transition"
+      persistent
+    >
       <MtCard
+        v-if="dialog"
+        v-resize="onResize"
         :title="title"
-        :height="height"
-        :width="width"
-        style="overflow: auto"
+        :height="dialogHeight"
       >
-        <MtCard
-          :height="dialogInnerWidth"
-          :width="dialogInnerWidth"
-          style="overflow: auto"
-        >
-          <iframe
-            v-if="showMap"
-            :src="mapPage"
-            height="400"
-            width="500"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </MtCard>
+        <slot />
         <v-card-actions>
           <v-spacer></v-spacer>
-          <MtButton @click="onClose"> CLOSE </MtButton>
+          <MtButton text="CLOSE" @on-click="onClose"></MtButton>
         </v-card-actions>
       </MtCard>
     </v-dialog>
@@ -43,28 +33,29 @@ export default {
     MtButton,
   },
   props: {
-    height: { type: [Number, String], required: false, default: 600 },
-    width: { type: [Number, String], required: false, default: 500 },
+    title: { type: String, required: true },
+    height: { type: [Number, String], required: false, default: undefined },
+    width: { type: [Number, String], required: false, default: undefined },
   },
   data: () => ({
     dialog: false,
-    title: "",
-    showMap: false,
-    dialogInnerHeight: 0,
-    dialogInnerWidth: 0,
+    dialogHeight: 0,
+    dialogWidth: 0,
+    resultFunction: null,
   }),
   methods: {
     onResize: function () {
-      this.dialogInnerHeight = this.height;
-      this.dialogInnerWidth = this.width;
+      this.dialogHeight = this.height ? this.height : window.innerHeight * 8;
+      this.dialogWidth = this.width ? this.width : window.innerWidth * 95;
+      let cardHeight = this.dialogHeight - 105; // タイトルとcloseボタンの高さ
+      this.$emit("on-resize", {
+        cardHeight: cardHeight,
+        cardWidth: this.dialogWidth,
+      });
     },
-    show: function (title, mapPage) {
-      this.title = title;
-      if (mapPage) {
-        this.mapPage = mapPage;
-        this.showMap = true;
-      }
+    show: function () {
       this.dialog = true;
+      //return new Promise((resolve) => (this.resultFunction = resolve));
     },
     onClose: function () {
       this.dialog = false;

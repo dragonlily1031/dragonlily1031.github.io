@@ -9,12 +9,13 @@
     <v-toolbar-title>{{ title }}</v-toolbar-title>
     <MtIconBtn
       v-if="!isHome"
+      icon
       icon-name="mdi-home"
       icon-color="#ffffff"
-      height="16"
-      :width="30"
+      height="30"
+      width="30"
       class="ml-1"
-      @back-home="backHome"
+      @on-click="backHome"
     ></MtIconBtn>
   </v-toolbar>
 </template>

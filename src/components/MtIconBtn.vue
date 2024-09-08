@@ -1,23 +1,21 @@
 <!-- MtIconBtn.vue -->
 <template>
-  <MtButton
+  <v-btn
     :color="color"
     :height="height"
     :width="width"
     :icon="icon"
-    @on-click="onClick"
+    @click="$emit('onClick')"
   >
     <MtIcon :name="iconName" :size="iconSize" :color="iconColor"></MtIcon>
-  </MtButton>
+  </v-btn>
 </template>
 
 <script>
-import MtButton from "@/components/MtButton.vue";
 import MtIcon from "@/components/MtIcon.vue";
 
 export default {
   components: {
-    MtButton,
     MtIcon,
   },
   props: {
@@ -32,9 +30,7 @@ export default {
     iconColor: { type: String, required: false, default: "primary" },
   },
   methods: {
-    onClick: function () {
-      this.$emit("backHome");
-    },
+    //
   },
 };
 </script>
