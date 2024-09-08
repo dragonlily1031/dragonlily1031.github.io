@@ -321,7 +321,7 @@ export default {
             title: "10:00 Target",
             subtitle: "雑貨、服など",
             comment:
-              "Santa Monica Pierから徒歩で大通りを15分。7:00-22:00。チャイニーズシアターからすぐの雑貨屋。\r\n値段はリーズナブルで、ロサンゼルスにちなんだお土産グッズがたくさんあるので要チェック。",
+              "Santa Monica Pierから徒歩で大通りを15分。7:00-22:00。\r\n値段はリーズナブルで、ロサンゼルスにちなんだお土産グッズがたくさんあるので要チェック。",
             homepage: "https://www.target.com/",
             map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.1004175614717!2d-118.49720478057863!3d34.01563327915276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a5e21575ca2b%3A0x78567f8677bc279f!2sTarget!5e0!3m2!1sja!2sjp!4v1725817921672!5m2!1sja!2sjp",
             tips: [],
