@@ -94,7 +94,8 @@ export default {
             icon: "mdi-bed",
             title: "15:00 Miyako Hybrid Hotel",
             subtitle: "チェックイン",
-            comment: "Walmartから車で約10分。",
+            comment:
+              "Walmartから車で約10分。チェックインを済ませたら、館内を探検してみよう。\r\n1階にはスパ、2階にはジムが併設されている。また、24時間無人販売のミニコンビニがあるのもうれしい。\r\nちなみにお部屋はバスタブもあるしウォシュレット付きなのもポイント高いよね。\r\nもし買い出しに行けなかったら、この19時ごろまでに済ませておきたい。（歩いて10分のところにRalphsというスーパーあり）",
             homepage: "https://www.miyakohybridhotel.com/miyako-jp/",
             map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.130484768951!2d-118.31236248935213!3d33.83474542907305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd4aa513cf0bfb%3A0x309209b25394d284!2z6YO944OP44Kk44OW44Oq44OD44OJ44Ob44OG44OrIOODiOODvOODqeODs-OCuQ!5e0!3m2!1sja!2sjp!4v1725466079903!5m2!1sja!2sjp",
             tips: [],
@@ -102,10 +103,22 @@ export default {
           {
             color: "indigo-lighten-2",
             icon: "mdi-silverware-fork-knife",
-            title: "19:00 - 20:00 In-N-Out Burger",
-            comment: "ホテルから車で約10分。ポテトはwell-doneで頼もうね。",
+            title: "19:00 In-N-Out Burger",
+            comment:
+              "ホテルから車で約10分。大谷さんも好きだと公言したハンバーガーショップ。\r\nポテトは冷凍とかじゃなく、じゃがいもから店内で調理しているらしい。\r\n\r\nおすすめカスタマイズ\r\n●バーガーのたまねぎははgrilledOnion（生たまねぎじゃなくて焼いてくれる）\r\n●ポテトはwell-done（二度揚げ）か、animal-style（チーズソース付き）",
             homepage: "https://www.in-n-out.com/",
             map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106091.71422541628!2d-118.41907876265624!3d33.80286504247772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd4af5d6911305%3A0x9059cc42ce212aa!2z44Kk44Oz44O744Ki44Oz44OJ44O744Ki44Km44OI44O744OQ44O844Ks44O8!5e0!3m2!1sja!2sjp!4v1725462836865!5m2!1sja!2sjp",
+            tips: [],
+          },
+          {
+            color: "green-lighten-1",
+            icon: "mdi-bed",
+            title: "21:00 Miyako Hybrid Hotel",
+            subtitle: "帰宅",
+            comment:
+              "In-N-Out Burgerから車で約10分。明日も早起きだからすぐに寝よう。",
+            homepage: "https://www.miyakohybridhotel.com/miyako-jp/",
+            map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.130484768951!2d-118.31236248935213!3d33.83474542907305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd4aa513cf0bfb%3A0x309209b25394d284!2z6YO944OP44Kk44OW44Oq44OD44OJ44Ob44OG44OrIOODiOODvOODqeODs-OCuQ!5e0!3m2!1sja!2sjp!4v1725466079903!5m2!1sja!2sjp",
             tips: [],
           },
         ],
@@ -282,7 +295,7 @@ export default {
             title: "19:00 Grove",
             subtitle: "買い物",
             comment:
-              "The Original Farmers Markeの隣にあるGroveというデパート?みたいなところ。10:00-21:00。\r\nここに入っているSephora（セフォラ）っていうコスメストアと、Sprinkle cupcakesだけ絶対行きたい！！",
+              "The Original Farmers Marketの隣にあるGroveというデパート?みたいなところ。10:00-21:00。\r\nここに入っているSephora（セフォラ）っていうコスメストアと、Sprinkle cupcakesだけ絶対行きたい！！",
             homepage: "https://www.ovationhollywood.com/",
             map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.905172314777!2d-118.36212446362694!3d34.07194505756921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b92fc2d303c3%3A0xc3906f8fff88db6e!2z44K244O744Kw44Ot44O844OW!5e0!3m2!1sja!2sjp!4v1725806288328!5m2!1sja!2sjp",
             tips: [],
