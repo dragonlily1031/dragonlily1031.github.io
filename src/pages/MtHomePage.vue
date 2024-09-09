@@ -96,6 +96,9 @@ export default {
     execute: function (title) {
       if (title == "Schedule") this.$router.push({ name: "schedule" });
 
+      if (title == "Hotel")
+        window.open("https://www.miyakohybridhotel.com/miyako-jp/");
+
       if (title == "Emergency") this.$router.push({ name: "emergency" });
     },
   },
