@@ -9,7 +9,7 @@
     :to="to"
     :icon="icon"
     :append-icon="appendIcon"
-    @click="$emit('onClick')"
+    @click="$emit('on-click')"
   >
     {{ text }}
     <template v-slot:append>

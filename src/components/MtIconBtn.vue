@@ -19,15 +19,15 @@ export default {
     MtIcon,
   },
   props: {
-    color: { type: String, required: false, default: "primary" },
+    color: { type: String, required: false, default: "" },
     height: { type: [Number, String], required: true },
     width: { type: [Number, String], required: true },
     outlined: { type: Boolean, required: false, default: false },
     icon: { type: Boolean, required: false, default: false },
     to: { type: [String, Object], required: false, default: undefined },
     iconName: { type: String, required: true },
-    iconSize: { type: Number, required: true },
-    iconColor: { type: String, required: false, default: "primary" },
+    iconSize: { type: Number, required: false },
+    iconColor: { type: String, required: false },
   },
   methods: {
     //

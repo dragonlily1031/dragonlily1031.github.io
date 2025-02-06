@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 
+import MtLoginPage from "@/pages/MtLoginPage.vue";
 import MtHomePage from "@/pages/MtHomePage.vue";
 import MtSchedulePage from "@/pages/MtSchedulePage.vue";
 import MtEmergencyPage from "@/pages/MtEmergencyPage.vue";
@@ -7,6 +8,11 @@ import MtEmergencyPage from "@/pages/MtEmergencyPage.vue";
 const routes = [
   {
     path: "/",
+    name: "login",
+    component: MtLoginPage,
+  },
+  {
+    path: "/home",
     name: "home",
     component: MtHomePage,
   },
@@ -23,7 +29,8 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  base: process.env.BASE_URL,
+  history: createWebHashHistory(process.env.BASE_URL),
   routes,
 });
 

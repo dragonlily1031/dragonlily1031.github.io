@@ -6,7 +6,7 @@
 <script>
 export default {
   props: {
-    color: { type: String, required: true },
+    color: { type: String, required: false },
     name: { type: String, required: true },
     size: { type: [Number, String], required: false },
   },
